@@ -35,15 +35,20 @@ class MainActivity : AppCompatActivity() {
         val chats: ArrayList<Chat> = ArrayList<Chat>()
 
         val rooms: ArrayList<Room> = ArrayList<Room>()
-        rooms.add(Room(R.drawable.profile_img1, "Gaffarov Jakhongir"))
-        rooms.add(Room(R.drawable.profile_img2, "Gaffarov Jakhongir2"))
-        rooms.add(Room(R.drawable.profile_img3, "Gaffarov Jakhongir3"))
-        rooms.add(Room(R.drawable.profile_img1, "Gaffarov Jakhongir"))
-        rooms.add(Room(R.drawable.profile_img2, "Gaffarov Jakhongir2"))
-        rooms.add(Room(R.drawable.profile_img3, "Gaffarov Jakhongir3"))
-        rooms.add(Room(R.drawable.profile_img1, "Gaffarov Jakhongir"))
-        rooms.add(Room(R.drawable.profile_img2, "Gaffarov Jakhongir2"))
-        rooms.add(Room(R.drawable.profile_img3, "Gaffarov Jakhongir3"))
+        rooms.add(Room(R.drawable.ic_add_video2, "Create  room", true))
+        rooms.add(Room(R.drawable.profile_img1, "Gaffarov Jakhongir", false))
+        rooms.add(Room(R.drawable.profile_img2, "Gaffarov Jakhongir2", false))
+        rooms.add(Room(R.drawable.profile_img3, "Gaffarov Jakhongir3", false))
+        rooms.add(Room(R.drawable.profile_img1, "Gaffarov Jakhongir", false))
+        rooms.add(Room(R.drawable.profile_img2, "Gaffarov Jakhongir2", false))
+        rooms.add(Room(R.drawable.profile_img3, "Gaffarov Jakhongir3", false))
+        rooms.add(Room(R.drawable.profile_img1, "Gaffarov Jakhongir", false))
+        rooms.add(Room(R.drawable.profile_img2, "Gaffarov Jakhongir2", false))
+        rooms.add(Room(R.drawable.profile_img3, "Gaffarov Jakhongir3", false))
+        rooms.add(Room(R.drawable.profile_img1, "Gaffarov Jakhongir", false))
+        rooms.add(Room(R.drawable.profile_img2, "Gaffarov Jakhongir2", false))
+        rooms.add(Room(R.drawable.profile_img3, "Gaffarov Jakhongir3", false))
+
 
         // Rooms
         chats.add(Chat(rooms))
@@ -58,7 +63,9 @@ class MainActivity : AppCompatActivity() {
         chats.add(Chat(Message(R.drawable.profile_img1, "Gaffarov", false)))
         chats.add(Chat(Message(R.drawable.profile_img2, "Gaffarov2", false)))
         chats.add(Chat(Message(R.drawable.profile_img3, "Gaffarov3", true)))
-
+        chats.add(Chat(Message(R.drawable.profile_img1, "Gaffarov", false)))
+        chats.add(Chat(Message(R.drawable.profile_img2, "Gaffarov2", false)))
+        chats.add(Chat(Message(R.drawable.profile_img3, "Gaffarov3", true)))
         return chats
     }
 }
